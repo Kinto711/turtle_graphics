@@ -7,10 +7,10 @@ path = ["forward", "right", "left", "backward"]
 
 tim = Turtle()
 tim.pensize(10)
-
+tim.speed("fastest")
 
 def ran_walk():
-    while True:
+    for _ in range(200):
         ran_color = random.choice(colors)
         ran_path_length = random.randint(1,100)
         ran_angle = random.randint(1,360)
